@@ -10,3 +10,43 @@ git add .
 
 git commit -m "My First Commit"
 
+-----------------------------------
+cretae new repo
+mkdir novserver
+mkdir novdep1
+mkdir novdep2
+server side
+-------
+git --bare init
+ll
+user side
+-----------
+git init
+goto ..git
+create new file
+vi firstfile
+git status
+git add .
+git commit -m "First file has been created"
+git push origin master
+how to configure local repo with remote repo?
+git remote add <name> <url>
+git remote add origin /home/goldentech/noserver
+git push origin master
+-------------------------
+goto novdev2
+git clone /home/goldentech/noserver
+cd novserver
+ll
+vi secondfile
+git status
+git add .
+git commit -m "Second"
+git push origin master
+-------------------
+goto novdev1
+git pull origin master
+-----------------------
+git log -2(two recent commits)
+git log --oneline(commits in one line)
+git show "commit id"
