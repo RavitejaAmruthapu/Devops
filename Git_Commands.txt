@@ -17,11 +17,11 @@ mkdir novdep1
 mkdir novdep2
 server side
 -------
-git --bare init
+git --bare init    --create bare repo
 ll
 user side
 -----------
-git init
+git init   --create non bare repo
 goto ..git
 create new file
 vi firstfile
@@ -50,3 +50,16 @@ git pull origin master
 git log -2(two recent commits)
 git log --oneline(commits in one line)
 git show "commit id"
+--------------------------------------------
+Branches:
+Step1: Create Branch
+git branch <Branch Name>-- create new branch or git checkout -b <branch name> --create new branch and checkout to new branch 
+step 2: checkout branch
+git checkout <branch name> --moving from one branch to another branch
+step 3:merge new branch in master brach
+git merge <new branch name>
+step 4:Deleting the branch
+git branch -d <branch name> ---this will only remove from local
+git push origin -delete <branch name> --This will reove from remote server repo.
+step 5:How to push local branch to server
+git push origin <New Branch>

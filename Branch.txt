@@ -1,0 +1,72 @@
+mkdir <new folder>
+cd <new folder>
+git init --create new repo
+vi <new file1>
+git add <new file1>
+git commit -m "Created first file"
+vi <new file2>
+git add <new file2>
+git commit -m "Created second file"
+git log
+git status
+git log --all --decorate --oneline --graph
+alias graph = "git log --all --decorate --oneline --graph"
+git branch b1
+git branch b2
+git branch
+git checkout b1
+git status
+vi firstfile
+add new line and save file
+git add firstfile
+git commit -m "b1 for first file"
+graph
+git checkout b2
+git branch
+vi FirstFile
+add new line and save file
+git add Firstfile
+git commit -m "b2 for First file"
+merging is two types 1) Fast Forward merge and 2)3 way merge
+In Fast Forward merge, move master head pointer to direct b1
+git checkout master
+git diff master..b1
+git merge b1
+cat firstfile
+graph
+git branch --merged
+git branch -d b1
+git branch -d b2 --it will warn before delete
+git branch -D b2 --recursively delete
+git status
+git merge b2
+git branch -d b2
+-------------------------
+merge conflicts:
+
+git checkout -b b3
+vi FirstFile
+git diff
+git commit -a -m "Update First File"
+git checkout master
+vi FirstFile
+git commit -a -m "Update First File"
+graph
+git status
+git merge b3
+git status
+git merge --abort
+git merge b3
+git status
+vi FirstFile and delete or remains conflics in file and save
+git status
+git commit
+save and exit
+graph
+git branch -d b3
+----------------------------
+Detached Head State:
+moving head pointer to previous commit state
+git log
+
+
