@@ -1,3 +1,5 @@
+https://www.youtube.com/watch?v=FyAAIHHClqI
+------------------------------------------
 mkdir <new folder>
 cd <new folder>
 git init --create new repo
