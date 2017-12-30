@@ -70,5 +70,17 @@ git branch -d b3
 Detached Head State:
 moving head pointer to previous commit state
 git log
+------------------------------------------------
+Adding SSH key to gitHub accoutnt for password less accessing:
+--------------------------------------------------------------
+1)generate key in our system
+2)open the public key file in user home directory(/home/teja/.ssh/id_rsa.pub) and copy the the key
+3)login to github account
+4)click on settings
+5)click on ssh keys and new ssh key
+6)paste the public key
+7)click on add sssh key
+8)set the remote url for local repo as "git remote set-url origin git@github.com:<Username>/<Project>.git" ex:git remote set-url origin   git@github.com:RavitejaAmruthapu/Demo.git
+
 
 
